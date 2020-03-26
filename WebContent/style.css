@@ -1,0 +1,10 @@
+body{
+	background: url("Signin.jpg")
+	no-repeat center center fixed;
+	background-size: cover;
+	
+}
+form{
+	text-align: center;
+	color: white;
+}
