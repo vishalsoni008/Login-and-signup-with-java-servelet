@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -48,7 +49,7 @@ public class Signup extends HttpServlet{
 			// int i=st.executeUpdate("insert into stack(fname,lname,number,country,userid,password,mail)values('"+fname+"','"+lname+"','"+number+"','"+country+"','"+userid+"','"+password+"','"+mail+"')");
 			 response.sendRedirect("Sucesssignup.jsp");
 		 }
-		 catch(Exception e)
+		 catch (ClassNotFoundException |SQLException e)
 		 {
 		 	System.out.print(e);
 		 	e.printStackTrace();

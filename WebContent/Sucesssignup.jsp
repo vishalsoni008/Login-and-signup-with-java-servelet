@@ -8,6 +8,6 @@
 </head>
 <body>
 you sucessfully Signup
-<a href="Login.html">Login here</a>
+<a href="index.html">Login here</a>
 </body>
 </html>
